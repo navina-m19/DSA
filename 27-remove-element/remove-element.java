@@ -8,7 +8,7 @@ class Solution {
                 k++;
             }
         }
-//LONG
+
         return k;
     }
 }
