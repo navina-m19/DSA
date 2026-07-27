@@ -1,16 +1,17 @@
 class Solution {
     public boolean isPalindrome(int x) {
         int digit;
-        int dup=x;
         int rev=0;
+        int rev_num=x;
         while(x>0){
             digit=x%10;
             rev=rev*10+digit;
-            x=x/10;
+            x/=10;
         }
-        if(dup==rev){
+        if(rev_num==rev){
             return true;
         }
-        return false;
+
+       return false; 
     }
 }
